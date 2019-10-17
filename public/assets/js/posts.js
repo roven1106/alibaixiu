@@ -28,7 +28,7 @@ function changePage(page){
         type:'get',
         url:'/posts',
         data:{
-            page
+            page:page
         },
         success:function(res){
             var html = template('postsTpl',res);
