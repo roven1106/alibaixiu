@@ -36,7 +36,7 @@ $('#categoryBox').on('click','.edit',function(){
     });
 });
 
-$('modifyBox').on('submit','#modifyCategory',function(){
+$('#modifyBox').on('submit','#modifyCategory',function(){
     var id = $(this).attr('data-id');
     $.ajax({
         type:'put',
